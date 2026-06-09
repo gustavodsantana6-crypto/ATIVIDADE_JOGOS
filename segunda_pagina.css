@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0088cc;
+    transform: scale(1.05);
+}
+
+@keyframes entrada {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+    
+}
