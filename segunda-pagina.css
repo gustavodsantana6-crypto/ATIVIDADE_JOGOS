@@ -1,4 +1,3 @@
-/* Importação da fonte moderna Poppins para combinar com a Home */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;700&display=swap');
 
 * {
@@ -11,12 +10,11 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     min-height: 100vh; 
     
-    /* Fusão da sua imagem do Minecraft com o degradê dinâmico e escuro do estilo 2 */
     background: linear-gradient(
         135deg,
         rgba(15, 5, 29, 0.9),
         rgba(50, 16, 84, 0.85)
-    ), url('assets/campfire-mountain.webp'); /* Mantida a sua imagem de fundo do Minecraft */
+    ), url('assets/campfire-mountain.webp');
     
     background-size: 140% 140%;
     background-position: center;
@@ -31,14 +29,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Animação suave do fundo herdada do estilo 2 */
+
 @keyframes fundoAnimado {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
-/* Header estilizado com efeito blur e borda neon roxa */
 header {
     background-color: rgba(15, 5, 29, 0.75);
     backdrop-filter: blur(12px);
@@ -48,7 +45,6 @@ header {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Título principal com degradê metálico e brilho neon */
 h1 { 
     margin-bottom: 15px;
     font-size: 2.8rem;
@@ -61,7 +57,6 @@ h1 {
     filter: drop-shadow(0 0 15px rgba(161, 36, 255, 0.6));
 }
 
-/* Menu de navegação */
 nav {
     display: flex;
     justify-content: center;
@@ -90,7 +85,6 @@ nav a:hover {
     box-shadow: 0 4px 15px rgba(161, 36, 255, 0.2);
 }
 
-/* Container do conteúdo principal com a animação de entrada fluida */
 main { 
     padding: 40px 20px;
     flex: 1;
@@ -101,7 +95,6 @@ main {
     animation: entrada 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Parágrafos de texto do Minecraft padronizados com o espaçamento e brilho do estilo 2 */
 p {
     font-size: 1.3rem;
     font-weight: 300;
@@ -113,7 +106,6 @@ p {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Container dos botões */
 .botoes {
     display: flex;
     justify-content: center;
@@ -121,7 +113,6 @@ p {
     flex-wrap: wrap;
 }
 
-/* Botões com o degradê roxo marcante e sombra neon */
 button {
     background: linear-gradient(135deg, #7c3aed, #a855f7);
     color: white;
@@ -138,14 +129,12 @@ button {
     box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
 }
 
-/* Efeito Hover dos botões com expansão e brilho intenso */
 button:hover {
     background: linear-gradient(135deg, #6d28d9, #9333ea);
     transform: scale(1.05) translateY(-2px);
     box-shadow: 0 8px 25px rgba(124, 58, 237, 0.7), 0 0 15px rgba(168, 85, 247, 0.5);
 }
 
-/* Animação de entrada suave */
 @keyframes entrada {
     from {
         opacity: 0;
