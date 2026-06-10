@@ -74,7 +74,12 @@ h1 {
     filter: drop-shadow(0 0 15px rgba(161, 36, 255, 0.6));
 }
 
-
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 nav a {
     color: #d8b4fe;
