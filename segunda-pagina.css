@@ -52,6 +52,7 @@ h1 {
     letter-spacing: 2px;
     text-transform: uppercase;
     background: linear-gradient(to right, #ffffff, #d8b4fe);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 15px rgba(161, 36, 255, 0.6));
