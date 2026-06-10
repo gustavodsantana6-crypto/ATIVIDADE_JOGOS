@@ -1,8 +1,13 @@
+
+@import url('https://googleapis.com');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 .body terceira-pagina {
     background-image: url(assets/wp1809640.jpg);
@@ -18,24 +23,87 @@
 header {
     background-color: #111827;
     padding: 20px;
+
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh; 
+    background: linear-gradient(
+        135deg,
+        rgba(15, 5, 29, 0.85),
+        rgba(35, 12, 60, 0.80)
+    ), url('assets/gta-5-grand-theft-1920x1080-10749.jpg');
+    background-size: 130% 130%;          
+    background-repeat: no-repeat;    
+    background-attachment: fixed;    
+    animation: fundoMexendo 25s ease-in-out infinite alternate;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+@keyframes fundoMexendo {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 50% 100%; }
+    100% { background-position: 100% 0%; }
+}
+
+header {
+    background-color: rgba(15, 5, 29, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 25px 20px;
+    border-bottom: 2px solid rgba(161, 36, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+    z-index: 10;
 }
 
 h1 { 
     margin-bottom: 15px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff, #d8b4fe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 15px rgba(161, 36, 255, 0.6));
 }
 
+
+
 nav a {
-    color: white;
+    color: #d8b4fe;
     text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
 }
-nav a:hover {
-    color: #00bfff;
+
+nav a:hover, nav a.active {
+    color: white;
+    background-color: rgba(161, 36, 255, 0.2);
+    text-shadow: 0 0 10px #c084fc, 0 0 20px #a855f7;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(161, 36, 255, 0.2);
 }
 
 main { 
-    padding: 40px;
+    padding: 60px 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    animation: entradaConteudo 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 p {
@@ -71,9 +139,57 @@ button:hover {
         transform: translateY(40px);
     }
 
-    to{
-        opacity:1;
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
-    
 }
+
+@keyframes entradaConteudo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-conteudo {
+    background-color: rgba(12, 4, 24, 0.85); 
+    border: 2px solid rgba(168, 85, 247, 0.3); 
+    border-radius: 24px; 
+    padding: 50px 40px;
+    max-width: 850px; 
+    width: 100%;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+.card-conteudo h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 15px rgba(226, 182, 255, 0.8), 0 0 25px rgba(168, 85, 247, 0.5);
+}
+
+.card-conteudo p {
+    font-size: 1.2rem;
+    font-weight: 400; 
+    color: #f3e8ff; 
+    line-height: 1.9; 
+    letter-spacing: 0.3px;
+    text-align: justify; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.card-conteudo p span {
+    color: #e2b6ff;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(226, 182, 255, 0.8);
+}
+                 
